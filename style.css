@@ -183,25 +183,6 @@ h1{
 }
 
 
-/*.header h1::before{
- content: '<h1>';
- display: block;
- font-family: 'La Belle Aurore',cursive;
-     color: #515152;
-     font-size: 12px;
-     top: -5rem;
-     text-align: left;
-} 
-.header h1::after{
- content: '<h1>';
- display: block;
- font-family: 'La Belle Aurore',cursive;
-     color: #515152;
-     font-size: 12px;
-     top: -5rem;
-     text-align: left;
-} */
-
 /*Nav*/
 #navLink:hover{
   color: darkred;
