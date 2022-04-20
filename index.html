@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Bootstrap Portfolio</title>
+
+	<!-- Links -->
+	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Arvo:wght@700&family=Domine&family=Lusitana:wght@700&family=M+PLUS+Rounded+1c:wght@100&family=Nanum+Brush+Script&family=Righteous&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://kit.fontawesome.com/c656a6045a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- <div class="container-fluid" >
+		<img src="header.jpg" class="h-100 position-relative" style="min-height: 100vh; min-width: 100vh;">
+		
+	  
+	</div> -->
+	<div class="header">
+		<div class="headerText text-center text-white">
+		    <h1 class="text-white">I am Jay</h1>
+		    	<p>Get interested.</p>
+		    	<div class="d-flex flex-column flex-sm-row justify-content-evenly align-items-center flex-nowrap mainte">
+			    	<span class="px-2">So I can feed this High Maintenance creature</span>
+			    	<div class="pacman">
+			    		<div class="pacman__mouth"></div>
+			    	</div>
+		    	</div>
+		    <a href="#nav" class="btn btn-outline-primary text-white mt-2 button-detail">CONNECT</a>
+	 	 </div>
+	</div>
+
+	<!-- Navbar -->
+	<section id="nav">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		  <div class="container-fluid my-2">
+		    <a class="navbar-brand" href="#">
+		    	<img src="images/brand.jpg" width="30" height="30" class="d-inline-block align-text-top rounded-circle"><span class="px-1">Nacs</span>
+		    </a>
+		    <!-- If small -->
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <!-- If big -->
+		    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item px-4">
+		          <a class="nav-link" aria-current="page" href="#aboutMe" id="navLink">About</a>
+		        </li>
+		        <li class="nav-item px-4">
+		          <a class="nav-link" href="#project" id="navLink">Project</a>
+		        </li>
+		        <li class="nav-item px-4">
+		          <a class="nav-link" href="#contact" id="navLink">Contact</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</section>
+
+	<!-- /Nav -->
+	
+
+	<div class="dev-container pt-5">
+		<div class="dev-body">
+			<ul class="dev-list">
+				<li><span>Front End</span></li>
+				<li><span>Back End</span></li>
+				<li><span>Full Stack</span></li>
+			</ul>
+			<h1 class="dev">Developer</h1>
+		</div>
+	</div>
+
+	<!-- Myself -->
+	<section class="my-5" id="aboutMe">
+		<div class="container-fluid px-sm-5">
+			<div class="row justify-content-center align-items-center text-white">
+				<div class="col-lg-5 col-xxl-4 col-12 d-grid justify-content-center">
+					<h2 class="text-center whos">Who is this guy?</h2>
+					<div class="img-container">
+						<img src="images/formal1.jpg">
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-xxl-4 col-sm-10 col-md-8 col-12 pt-5">
+					<p>The name is Jay Ryan Nacua. A random adventurer who got lost in the forest of limitless paths, got knocked out in a different world. Struggling to find the "right" direction on these past years.<p>
+					<p>But now, when he saw a little light, he grabs the oppurtunity and continued his journey. To pursue his dream career and that is to <span class="design-build">Design</span> and <span class="design-build">Build</span></p>
+					<h3 class="text-center">"Life Changer quote here"</h3>
+					<div class="d-grid justify-content-end">
+				 		  <button class="btn btn-outline-danger mb-2 button-detail" type="submit" data-bs-toggle="modal" data-bs-target="#detailModal">View Details</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Myself-->
+
+	<!-- Modals -->
+		<div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="detailModalLabel">Thank you for your interest!</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body text-center">
+					        Unfortunately, no content yet
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+		</div>
+
+		<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Developer Portfolio</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body text-center">
+					        You're already looking at it!
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+		</div>
+
+		<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Dummy Project</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body text-center">
+					        Hire me so this won't be a dummy anymore :D
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+		</div>
+
+		<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Dummy Project</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					      </div>
+					      <div class="modal-body text-center">
+					        Hire me so this won't be a dummy anymore :D
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+		</div>
+
+					
+	<!-- Projects -->
+	
+	<section class="cardSection mx-2" id="project">
+		<h1 class="text-white text-center pt-5">Works</h1>
+		<div class="d-flex flex-column flex-sm-row justify-content-evenly align-items-center flex-wrap pb-5" id="cards">
+			<div class="card">
+				<!-- Carousel -->
+				  	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+				  		<div class="carousel-inner">
+				  			<div class="carousel-item active car-proj1-img1">
+				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
+				  			</div>
+				  			<div class="carousel-item car-proj1-img2">
+				  			</div>
+				  			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+				  				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  				<span class="visually-hidden">Previous</span>
+				  			</button>
+				  			<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+				  				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  				<span class="visually-hidden">Next</span>
+				  			</button>
+				  		</div>
+				  	</div>
+				<!-- End Carousel -->
+				<div class="card-body">
+			  	<h2>Portfolio</h2>
+			    <div class="d-grid gap-2 col-6 mx-auto">
+			      <button class="btn btn-outline-danger button-detail" type="button" data-bs-toggle="modal" data-bs-target="#project1Modal">View Project</button>
+			    </div>
+			  </div>
+			</div>
+			<div class="card">
+				<!-- Carousel -->
+			  	<div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active car-proj2-img1">
+				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
+				  		</div>
+						<div class="carousel-item car-proj2-img2">
+				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
+				  		</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+					    </button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<!-- End Carousel -->
+			  <div class="card-body">
+			  	<h2>Dummy 1</h2>
+			    <div class="d-grid gap-2 col-6 mx-auto">
+			      <button class="btn btn-outline-danger button-detail" type="button" data-bs-toggle="modal" data-bs-target="#project2Modal">View Project</button>
+			    </div>
+			  </div>
+			</div>
+			<div class="card">
+				<!-- Carousel -->
+			  	<div id="carousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active car-proj3-img1">
+				  			<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
+				  		</div>
+						<div class="carousel-item car-proj3-img2">
+				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
+				  		</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+					    </button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<!-- Carousel -->
+			  <div class="card-body">
+			  	<h2>Dummy 2</h2>
+			    <div class="d-grid gap-2 col-6 mx-auto">
+			      <button class="btn btn-outline-danger button-detail detailModal" type="button" data-bs-toggle="modal" data-bs-target="#project3Modal">View Project</button>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+	</section>
+	<!-- /Project -->
+
+
+	<!-- Contact -->
+	<section id="contact">
+		<h1 class="mt-5 pb-2 text-white text-center text-xxl-left">Let's Work Together!</h1>
+		<div class="container-fluid mt-3">
+			<div class="row justify-content-center align-items-center">
+				<!-- Form -->
+				<div class="col-md-6 col-xxl-4 order-md-2">
+					<div class="form container form-container">
+						<div class="form-header row">
+						    <legend class="d-flex justify-content-center align-items-center">Contact Me</legend>
+						</div>
+						<form class="row form-content">
+						    <div class="col-sm-12 py-2 pt-4">
+						    	<i class="fa-solid fa-user"></i>
+						      	<label for="name" class="form-label">Name</label>
+						      	<input type="text" class="form-control" id="name"required>
+						    </div>
+						    <div class="col-sm-7 py-2">
+							    <i class="fa-solid fa-envelope"></i>
+							    <label for="email" class="form-label">Email</label>
+							    <input type="email" class="form-control" id="email" required>
+						    </div>
+						    <div class="col-sm-5 py-2">
+						    	<i class="fa-solid fa-phone"></i>
+							    <label for="contactNo" class="form-label">Mobile </label>
+							    <input type="text" class="form-control" id="contactNo">
+						    </div>
+						    <div class="col-sm-12 py-2">
+						    	<i class="fa-solid fa-comment-dots"></i>
+						      	<label for="message" class="form-label">Message</label>
+						      	<textarea id="message" rows="3" class="form-control" id="message"></textarea>
+						    </div>
+						    <div class="col-sm-12 py-3">
+						    <button type="submit" class="form-button" data-bs-toggle="modal" data-bs-target="#contactModal">Submit</button>
+						    </div>
+						    <!-- Modal -->
+						    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						      <div class="modal-dialog">
+						        <div class="modal-content">
+						          <div class="modal-header">
+						            <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+						            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						          </div>
+						          <div class="modal-body text-center">
+						            Message Successfully Sent
+						          </div>
+						          <div class="modal-footer">
+						            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						          </div>
+						        </div>
+						      </div>
+						    </div>
+						</form>
+					</div>
+				</div>
+				<!-- /Form -->
+				<div class="col-md-6 col-xxl-4 text-center p-2">
+					<iframe class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.4049907997767!2d123.87923875102831!3d10.314112548072261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99f5c2050c295%3A0x388d32e861dc1f34!2sDorm%20Elizabeth%20V!5e0!3m2!1sen!2sph!4v1650379986734!5m2!1sen!2sph" width="800" height="475" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- /Contact -->
+
+	<!--  Footer -->
+
+	<div class="container-fluid bg-dark mt-3">
+		<footer class="row text-white text-center">
+			<section class="col my-3">	
+				<a class="btn btn-outline-light mx-1" href="https://www.facebook.com" role="button" id="facebook">
+				<i class="fa-brands fa-facebook-f"></i></a>
+
+		      	<a class="btn btn-outline-light mx-1" href="https://twitter.com" role="button" id="twitter">
+		     	<i class="fa-brands fa-twitter"></i></a>
+		    
+		      	<a class="btn btn-outline-light mx-1" href="https://gmail.com" role="button" id="gmail">
+		     	<i class="fa-brands fa-google"></i></a>
+
+		      	<a class="btn btn-outline-light mx-1" href="https://discord.com" role="button" id="discord">
+		      	<i class="fa-brands fa-discord"></i></a>
+
+		      	<a class="btn btn-outline-light mx-1" href="https://linkedin.com" role="button" id="linkedIn">
+		      	<i class="fa-brands fa-linkedin-in"></i></a>
+
+		    	<a class="btn btn-outline-light mx-1" href="https://github.com" role="button" id="github">
+		      	<i class="fa-brands fa-github"></i></a>
+			</section>
+			<div class="copyright py-1">
+				<div class="text-muted">Made by Jay Ryan Nacua</div>
+				<div class="copyLogo text-muted">©2022 All Rights Reserved</div>
+			</div>
+		</footer>	
+	</div>
+	<!-- /Footer -->
+
+	<!-- JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
