@@ -367,7 +367,7 @@ footer span{
 }
 
 .car-proj1-img1{
-  background-image: url("images/project1_1.png");
+  background-image: url("images/project1_1.PNG");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -376,7 +376,7 @@ footer span{
   width: 100%;
 }
 .car-proj1-img2{
-  background-image: url("images/project1_2.png");
+  background-image: url("images/project1_2.PNG");
   background-position: center;
   background-size: cover;
   position: relative;
