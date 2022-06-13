@@ -394,10 +394,74 @@ footer span{
   background-size: cover;
 }
 .car-proj3-img1{
-  background-image: url("images/project3_1.jpg");
+  background-image: url("images/project3_1.PNG");
   background-size: cover;
 }
 .car-proj3-img2{
-  background-image: url("images/project3_2.jpg");
+  background-image: url("images/project3_2.PNG");
   background-size: cover;
+}
+.car-proj4-img1{
+  background-image: url("images/project4_1.PNG");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+
+}
+.car-proj4-img2{
+  background-image: url("images/project4_2.PNG");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+/*Updated Version*/
+.apiTester h5{
+  display: inline-block;
+}
+
+.apiTester span{
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.langUsed h4{
+  display: inline-block;
+}
+
+.langUsed span{
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 24px;
+}
+.hosted h5{
+  display: inline-block;
+}
+
+.hosted span{
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.toolsList{
+  font-size: 20px;
+}
+
+.sourceCode{
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.mern{
+  font-size: 20px;
 }
