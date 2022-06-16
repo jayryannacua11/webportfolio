@@ -142,6 +142,11 @@ h1{
   }
 }
 
+#aboutMe{
+  padding-bottom: 100px;
+
+}
+
 #aboutMe .img-container{
   max-height: 350px;
 }
@@ -247,7 +252,9 @@ label{
 
 }  
 /*Form*/
-
+#contact{
+  padding-top: 50px;
+}
 .form{
   background: #fff;
   border-radius: 5px;
@@ -385,12 +392,12 @@ footer span{
   width: 100%;
 }
 .car-proj2-img1{
-  background-image: url("images/project2_1.jpg");
+  background-image: url("images/project2_1.PNG");
   background-size: cover;
   position: relative;
 }
 .car-proj2-img2{
-  background-image: url("images/project2_2.jpg");
+  background-image: url("images/project2_2.PNG");
   background-size: cover;
 }
 .car-proj3-img1{
