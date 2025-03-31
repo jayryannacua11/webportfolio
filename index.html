@@ -9,10 +9,10 @@
 
 	<!-- Links -->
 	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Arvo:wght@700&family=Domine&family=Lusitana:wght@700&family=M+PLUS+Rounded+1c:wght@100&family=Nanum+Brush+Script&family=Righteous&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
-
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/owl.carousel.min.css">
+	<link rel="stylesheet" href="./css/owl.theme.default.min.css">
 	<script src="https://kit.fontawesome.com/c656a6045a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -100,20 +100,20 @@
 
 	<!-- Modals -->
 		<div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="detailModalLabel">Thank you for your interest!</h5>
-					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					      </div>
-					      <div class="modal-body text-center">
-					        Unfortunately, no content yet
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					      </div>
-					    </div>
-					  </div>
+				<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="detailModalLabel">Thank you for your interest!</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body text-center">
+					Unfortunately, no content yet
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+				</div>
 		</div>
 
 		<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -160,7 +160,7 @@
 					        					        					        
 					      </div>
 					      <div class="modal-footer">
-					        <a role="button" class="btn btn-info sourceCode" href="https://gitlab.com/batch176-nacua/capstone-2-development">View Source Code</a>
+					        <a role="button" class="btn btn-info sourceCode" href="https://gitlab.com/batch176-nacua/capstone-2-development" target="_blank">View Source Code</a>
 					      </div>
 					    </div>
 					  </div>
@@ -180,7 +180,7 @@
 					      </div>
 					      <div class="modal-footer">
 
-					        <a role="button" class="btn btn-info sourceCode" href="https://gaming-shop-pi.vercel.app/">Visit Site</a>
+					        <a role="button" class="btn btn-info sourceCode" href="https://gaming-shop-pi.vercel.app/" target="_blank">Visit Site</a>
 					      </div>
 					    </div>
 					  </div>
@@ -202,7 +202,7 @@
 					      </div>
 					      <div class="modal-footer">
 
-					        <a role="button" class="btn btn-info sourceCode" href="https://2d-fighting-game.vercel.app/">Visit Site</a>
+					        <a role="button" class="btn btn-info sourceCode" href="https://2d-fighting-game.vercel.app/" target="_blank">Visit Site</a>
 					      </div>
 					    </div>
 					  </div>
@@ -211,74 +211,44 @@
 					
 	<!-- Projects -->
 	
-	<section class="cardSection mx-2" id="project">
+	<section class="cardSection" id="project">
 		<h1 class="text-white text-center pt-5">Works</h1>
-		<div class="d-flex flex-column flex-sm-row justify-content-evenly align-items-center flex-wrap pb-5" id="cards">
+		<div class="owl-carousel pb-5" id="cards">
+
 			<div class="card">
 				<!-- Carousel -->
-				  	<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-				  		<div class="carousel-inner">
-				  			<div class="carousel-item active car-proj1-img1">
-				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
-				  			</div>
-				  			<div class="carousel-item car-proj1-img2">
-				  			</div>
-				  			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-				  				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  				<span class="visually-hidden">Previous</span>
-				  			</button>
-				  			<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-				  				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  				<span class="visually-hidden">Next</span>
-				  			</button>
-				  		</div>
-				  	</div>
-				<!-- End Carousel -->
-				<div class="card-body">
-			  	<h2>Portfolio</h2>
-			    <div class="d-grid gap-2 col-6 mx-auto">
-			      <button class="btn btn-outline-danger button-detail" type="button" data-bs-toggle="modal" data-bs-target="#project1Modal">View Project</button>
-			    </div>
-			  </div>
-			</div>
-			<div class="card">
-				<!-- Carousel -->
-			  	<div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+				<div id="carousel5" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
 					<div class="carousel-inner">
-						<div class="carousel-item active car-proj2-img1">
-				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
-				  		</div>
-						<div class="carousel-item car-proj2-img2">
-				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
-				  		</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						    <span class="visually-hidden">Previous</span>
-					    </button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						    <span class="visually-hidden">Next</span>
+						<figure class="carousel-item carousel5-item1 active"><img src="images/proj_carwash1.JPG"></figure>
+						<figure class="carousel-item carousel5-item2"><img src="images/proj_carwash2.JPG"></figure>
+						<figure class="carousel-item carousel5-item3"><img src="images/proj_carwash3.JPG"></figure>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
 				</div>
-				<!-- End Carousel -->
-			  <div class="card-body">
-			  	<h2>REST API</h2>
-			    <div class="d-grid gap-2 col-6 mx-auto">
-			      <button class="btn btn-outline-danger button-detail" type="button" data-bs-toggle="modal" data-bs-target="#project2Modal">View Project</button>
-			    </div>
-			  </div>
+
+				<div class="card-body">
+					<h2>Car Wash (Elementor)</h2>
+				  	<div class="d-grid gap-2 col-6 mx-auto mt-3">
+						<a class="btn btn-outline-danger button-detail" type="button" target="_blank" href="https://carwashinsurancegroup.com/">View Project</a>
+				  	</div>
+				</div>
 			</div>
+
 			<div class="card">
 				<!-- Carousel -->
 			  	<div id="carousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
 					<div class="carousel-inner">
-						<div class="carousel-item active car-proj3-img1">
-				  			<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
-				  		</div>
-						<div class="carousel-item car-proj3-img2">
-				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
-				  		</div>
+						<figure class="carousel-item active"><img src="images/proj_mern1.jpg"></figure>
+						<figure class="carousel-item"><img src="images/proj_mern2.jpg"></figure>
+
 						<button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
 						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						    <span class="visually-hidden">Previous</span>
@@ -291,8 +261,8 @@
 				</div>
 				<!-- Carousel -->
 			  <div class="card-body">
-			  	<h2>Nacs Shop</h2>
-			    <div class="d-grid gap-2 col-6 mx-auto">
+			  	<h2>Gaming Shop (React)</h2>
+			    <div class="d-grid gap-2 col-6 mx-auto mt-3">
 			      <button class="btn btn-outline-danger button-detail detailModal" type="button" data-bs-toggle="modal" data-bs-target="#project3Modal">View Project</button>
 			    </div>
 			  </div>
@@ -300,14 +270,38 @@
 
 			<div class="card">
 				<!-- Carousel -->
+				<div id="carousel6" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+					<div class="carousel-inner">
+						<figure class="carousel-item carousel6-item1 active"><img src="images/proj_homecare1.JPG"></figure>
+						<figure class="carousel-item carousel6-item2"><img src="images/proj_homecare2.JPG"></figure>
+						<figure class="carousel-item carousel6-item3"><img src="images/proj_homecare3.JPG"></figure>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="card-body">
+					<h2>Home Care (Wordpress)</h2>
+				  	<div class="d-grid gap-2 col-6 mx-auto mt-3">
+						<a class="btn btn-outline-danger button-detail" type="button" target="_blank" href="https://www.reallovehomecare.com/">View Project</a>
+				  	</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<!-- Carousel -->
 			  	<div id="carousel4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
 					<div class="carousel-inner">
-						<div class="carousel-item active car-proj4-img1">
-				  			<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
-				  		</div>
-						<div class="carousel-item car-proj4-img2">
-				  				<!-- Uses background img because it's very hard to stay the same size of the img w/o breaking it :( -->
-				  		</div>
+						<figure class="carousel-item active"><img src="images/proj_game1.jpg"></figure>
+						<figure class="carousel-item"><img src="images/proj_game2.jpg"></figure>
+
 						<button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
 						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						    <span class="visually-hidden">Previous</span>
@@ -320,11 +314,90 @@
 				</div>
 				<!-- Carousel -->
 			  <div class="card-body">
-			  	<h2>2D Fighting</h2>
-			    <div class="d-grid gap-2 col-6 mx-auto">
+			  	<h2>2D Fighting Game</h2>
+			    <div class="d-grid gap-2 col-6 mx-auto mt-3">
 			      <button class="btn btn-outline-danger button-detail detailModal" type="button" data-bs-toggle="modal" data-bs-target="#project4Modal">View Project</button>
 			    </div>
 			  </div>
+			</div>
+
+			<div class="card">
+				<!-- Carousel -->
+				<div id="carousel7" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+					<div class="carousel-inner">
+						<figure class="carousel-item carousel7-item1 active"><img src="images/proj_staffing1.JPG"></figure>
+						<figure class="carousel-item carousel7-item2"><img src="images/proj_staffing2.JPG"></figure>
+						<figure class="carousel-item carousel7-item3"><img src="images/proj_staffing3.JPG"></figure>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel7" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carousel7" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="card-body">
+					<h2>Healthcare (Wordpress)</h2>
+				  	<div class="d-grid gap-2 col-6 mx-auto mt-3">
+						<a class="btn btn-outline-danger button-detail" type="button" target="_blank" href="https://www.civilityhomecareny.com/">View Project</a>
+				  	</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<!-- Carousel -->
+			  	<div id="carousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+					<div class="carousel-inner">
+						<figure class="carousel-item carousel2-item1 active"><img src="images/proj_rest1.jpg"></figure>
+						<figure class="carousel-item carousel2-item2"><img src="images/proj_rest2.jpg"></figure>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+					    </button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<!-- End Carousel -->
+			  <div class="card-body">
+			  	<h2>RESTful <span>API</span></h2>
+			    <div class="d-grid gap-2 col-6 mx-auto mt-3">
+			      <button class="btn btn-outline-danger button-detail" type="button" data-bs-toggle="modal" data-bs-target="#project2Modal">View Project</button>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="card">
+				<!-- Carousel -->
+				<div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+					<div class="carousel-inner">
+						<figure class="carousel-item active"><img src="images/proj_portfolio1.jpg"></figure>
+						<figure class="carousel-item"><img src="images/proj_portfolio2.jpg"></figure>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<!-- End Carousel -->
+				<div class="card-body">
+					<h2>Personal Portfolio</h2>
+					<div class="d-grid gap-2 col-6 mx-auto mt-3">
+					<button class="btn btn-outline-danger button-detail" type="button" data-bs-toggle="modal" data-bs-target="#project1Modal">View Project</button>
+					</div>
+			  	</div>
 			</div>
 
 		</div>
@@ -432,5 +505,13 @@
 	<!-- JS -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery-migrate-3.5.0.min.js"></script>
+	<script src="./js/jquery.easing.1.3.js"></script>
+	<script src="./js/jquery.skitter.min.js"></script>
+	<script src="./js/plugins.min.js"></script>
+	<script src="./js/owl.carousel.min.js"></script>
+
+
 </body>
 </html>

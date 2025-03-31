@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     background: #343F4F;
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background2.jpg");
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background2.jpg");
     align-items: center;
     justify-content: center;
     background-position: center;
@@ -20,7 +20,7 @@ body, html {
 
 /* Hero Image*/
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header.jpg");
 
   height: 100%;
   display: flex;
@@ -200,7 +200,7 @@ h1{
   font-size: 50px;
 }
 #project{
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/project1.jpg");
+  /* background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/project1.jpg"); */
   align-items: center;
   justify-content: center;
   background-position: center;
@@ -208,23 +208,31 @@ h1{
   background-size: cover;
   position: relative;
 
-  border-top-left-radius: 165px 140px;
+  /* border-top-left-radius: 165px 140px;
   border-top-right-radius: 165px 140px;
   border-bottom-left-radius: 110px 19px;
-  border-bottom-right-radius: 120px 24px;
+  border-bottom-right-radius: 120px 24px; */
+
+  border-top: 1px solid #fafafa;
 }
 #row{
     align-items: center;
     justify-items: center;
     color: white;
 }
+
+#cards {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .card {
-  margin-top: 50px;
   text-align: left;
   background: #242625;
   border-radius: 10px;
-  width: 300px;
-  box-shadow: 25px 25px 50px #1b1c1b, -25px -25px 50px #2d302f;
+  max-width: 300px;
+  margin: 50px auto 0;
+  /* box-shadow: 25px 25px 50px #1b1c1b, -25px -25px 50px #2d302f; */
 }
 .card:hover{
   
@@ -234,6 +242,16 @@ h1{
 }
 .carousel-item{
   height: 250px;
+}
+
+.card button.btn {padding-bottom: 10px;}
+
+.carousel-control-prev-icon {
+  filter: drop-shadow(0 0 .7px #fc6d6d) drop-shadow(0 0 .7px #fc6d6d) drop-shadow(0 0 .7px #fc6d6d);
+}
+
+.carousel-control-next-icon {
+  filter: drop-shadow(0 0 .7px #fc6d6d) drop-shadow(0 0 .7px #fc6d6d) drop-shadow(0 0 .7px #fc6d6d);
 }
 
 
@@ -252,6 +270,11 @@ label{
   color: #fff;
 
 }  
+
+.card-body h2 span {
+  display: block;
+}
+
 /*Form*/
 #contact{
   padding-top: 50px;
@@ -263,7 +286,7 @@ label{
   padding-right: 12px;
 }
 .form-header{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/contact1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/contact1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -340,11 +363,11 @@ label{
 footer .btn{
   border-radius: 50%;
   font-size: 12px;
-  box-shadow: 3px 3px 5px #aaaaaa;
+  /* box-shadow: 3px 3px 5px #aaaaaa; */
 }
 
 footer .btn:hover{
-  margin-top: -10px;
+  transform: translateY(-3px);
 }
 footer span{
   display: none;
@@ -375,7 +398,7 @@ footer span{
 }
 
 .car-proj1-img1{
-  background-image: url("images/project1_1.PNG");
+  background-image: url("../images/project1_1.PNG");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -384,7 +407,7 @@ footer span{
   width: 100%;
 }
 .car-proj1-img2{
-  background-image: url("images/project1_2.PNG");
+  background-image: url("../images/project1_2.PNG");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -393,24 +416,24 @@ footer span{
   width: 100%;
 }
 .car-proj2-img1{
-  background-image: url("images/project2_1.PNG");
+  background-image: url("../images/project2_1.PNG");
   background-size: cover;
   position: relative;
 }
 .car-proj2-img2{
-  background-image: url("images/project2_2.PNG");
+  background-image: url("../images/project2_2.PNG");
   background-size: cover;
 }
 .car-proj3-img1{
-  background-image: url("images/project3_1.PNG");
+  background-image: url("../images/project3_1.PNG");
   background-size: cover;
 }
 .car-proj3-img2{
-  background-image: url("images/project3_2.PNG");
+  background-image: url("../images/project3_2.PNG");
   background-size: cover;
 }
 .car-proj4-img1{
-  background-image: url("images/orig.PNG");
+  background-image: url("../images/project4_2.PNG");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -419,8 +442,15 @@ footer span{
   width: 100%;
 
 }
+
+.carousel-inner figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .car-proj4-img2{
-  background-image: url("images/project4_2.PNG");
+  background-image: url("../images/orig.PNG");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -473,3 +503,8 @@ footer span{
 .mern{
   font-size: 20px;
 }
+
+/* Owl Dots */
+.owl-dots { display: flex !important; justify-content: center; column-gap: 5px; margin-top: 20px;}
+.owl-dot { width: 8px; height: 8px; border-radius: 50%; background: #d4d4d4; border: none;}
+.owl-dot.active, .owl-dot:hover { background: #dc3545; }
