@@ -81,7 +81,9 @@ body, html {
 }
 
 h1{
-  font-family: 'Lusitana', serif;
+  /* font-family: 'Lusitana', serif; */
+  font-family: 'Acme', sans-serif;
+  font-size: 60px;
 }
 .navbar-brand span{
   font-family: 'Acme', sans-serif;
@@ -98,7 +100,6 @@ h1{
 }
 .dev-body .dev{
   color: #fff;
-  font-size: 60px;
   margin-top: -20px;
 }
 .dev-body .dev-list{
@@ -156,9 +157,16 @@ h1{
 }
 
 #aboutMe h3{
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 35px;
+  font-family: 'Acme', sans-serif;
+  font-size: 32px;
+  font-style: italic;
 }
+
+#aboutMe h3 span {
+  display: inline-block;
+}
+
+
 .img-container img{
   background-position: center;
   background-size: cover;
@@ -170,15 +178,15 @@ h1{
   margin: 0;
   max-width: 235px;
 }
-#aboutMe span{
+#aboutMe p span{
    text-decoration: underline;
-   font-size: 30px;
+   font-size: 32px;
    color: #FC6D6D;
 }
 
 #aboutMe p{
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 25px;
+  font-size: 27px;
   text-align: justify;
 }
 .button-detail{
@@ -197,7 +205,7 @@ h1{
 
 /*Projects*/
 .cardSection h1{
-  font-size: 50px;
+ 
 }
 #project{
   /* background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/project1.jpg"); */
