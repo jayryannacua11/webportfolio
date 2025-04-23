@@ -1,5 +1,4 @@
 $(document).ready(function(){ 
-    console.log('World')
    	$(".owl-carousel").owlCarousel({
 		items: 3,
 		nav: false,
@@ -18,6 +17,4 @@ $(document).ready(function(){
 		}
 	}
 	});
-
-    console.log('Hello')
 });
